@@ -26,9 +26,23 @@ background-color: white;
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <meta name="viewport" content="width=device-width" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="C:\Users\M. Kashif Javed\Documents\My Web Sites\css\w3.css" type="text/css">   
+    <link href="Content/Styles.css" rel="stylesheet" />
+<script>
+$(document).ready(function(){
+
+   $("p").hide();
+
+});
+$(document).ready(function(){
+    $("button").click(function(){
+        $("p").hide();
+    });
+});
+</script> 
 <script>
 window.oncontextmenu=function(){
 console.log("Right Click Disabled");
@@ -53,24 +67,16 @@ function FP_getObjectByID(id,o) {//v1.0
  return null;
 }
 </script>
-<meta content="en-us" http-equiv="Content-Language" />
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
 <title>Quick Data Provider | Home</title>
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
-
-<body onload="FP_preloadImgs(/*url*/'buttonF1.jpg',/*url*/'button47.jpg',/*url*/'button48.jpg',/*url*/'button49.jpg',/*url*/'button50.jpg',/*url*/'button51.jpg')">
-<div style="background-color: #111;" class="auto-style7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<img style="border-radius: 55px;" alt="not found" height="70" src="kanda3.PNG" width="150" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="index.html">
-<img id="img1" alt="Home" class="auto-style7" height="20" onmousedown="FP_swapImg(1,0,/*id*/'img1',/*url*/'button47.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img1',/*url*/'buttonE1.jpg')" onmouseover="FP_swapImg(1,0,/*id*/'img1',/*url*/'buttonF1.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img1',/*url*/'buttonF1.jpg')" src="buttonE1.jpg" style="border: 0" width="100" /><!-- MSComment="ibutton" fp-style="fp-btn: Braided Column 3" fp-title="Home" --><span class="auto-style7"></span></a><span class="auto-style7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span>
-<a href="admissions.html">
-<img id="img2" alt="Admissions" class="auto-style7" height="20" onmousedown="FP_swapImg(1,0,/*id*/'img2',/*url*/'button49.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img2',/*url*/'button52.jpg')" onmouseover="FP_swapImg(1,0,/*id*/'img2',/*url*/'button48.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img2',/*url*/'button48.jpg')" src="button52.jpg" style="border: 0" width="100" /><!-- MSComment="ibutton" fp-style="fp-btn: Braided Column 3" fp-title="Admissions" --><span class="auto-style7"></span></a><span class="auto-style7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span>
-<a href="about_us.html">
-<img id="img3" alt="About Us" class="auto-style7" height="20" onmousedown="FP_swapImg(1,0,/*id*/'img3',/*url*/'button51.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img3',/*url*/'button53.jpg')" onmouseover="FP_swapImg(1,0,/*id*/'img3',/*url*/'button50.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img3',/*url*/'button50.jpg')" src="button53.jpg" style="border: 0" width="100" /><!-- MSComment="ibutton" fp-style="fp-btn: Braided Column 3" fp-title="About Us" --></div>
-</a>
+<body style="background-color: #cccccc">
+<div style="background-color: #000066;" class="w3-card-12">
+<pre class="w3-card-12 w3-shadow-black"><img style="float: left; margin-left: 20px; border-radius: 60px; margin-top: 40px;" alt="not found" height="90" src="kanda3.PNG" width="150" />
+<p style="padding-top: 23px; font-family: calibri; font-size: 18px;"><b>				<a href="index.html"><button style=" height: 35px; width: 80px; border: green;" class="w3-container w3-green w3-hover-white w3-hover-text-green w3-round-large">Home</button></a>									<a href="admissions.html"><button style=" height: 35px; width: 115px; border: green;" class="w3-container w3-green w3-hover-white w3-hover-text-green w3-round-large">Admissions</button></a>									<a href="about_us.html"><button style=" height: 35px; width: 95px; border: green;" class="w3-container w3-green w3-hover-white w3-hover-text-green w3-round-large">About Us</button></a></b></p><br>
+</div></pre>
+	<br>
 <marquee class="auto-style11" style="background-color:  #269900; color:white;">For Latest News and Updates Stay Tuned With Us.</marquee>
 <style>
 body {
@@ -121,16 +127,9 @@ body {
   .sidenav a {font-size: 18px;}
 }
 .auto-style14 {
-	font-family: Algerian;
+	font-family: "Times New Roman", Times, serif;
 	text-align: center;
-	color: #FFFFFF;
-}
-.auto-style16 {
-	font-family: Algerian;
-	color: #FFFFFF;
-}
-.auto-style18 {
-	color: white;
+	color: #000000;
 }
 .auto-style22 {
 	font-family: Algerian;
@@ -139,11 +138,24 @@ body {
 .auto-style23 {
 	margin-left: 2px;
 }
-.auto-style24 {
-	text-align: center;
-}
 .auto-style25 {
 	font-family: "Times New Roman", Times, serif;
+}
+.auto-style26 {
+	color: #000000;
+}
+.auto-style27 {
+	font-family: "Times New Roman", Times, serif;
+	color: #000000;
+}
+.auto-style28 {
+	font-family: "Times New Roman", Times, serif;
+	text-align: center;
+}
+.auto-style30 {
+	font-family: "Times New Roman", Times, serif;
+	text-align: center;
+	font-size: 15px;
 }
 </style>
 <body>
@@ -171,81 +183,77 @@ function closeNav() {
 </script>
 </body>
 </html> 
-<div style="background-color: black;">
-	<div class="auto-style14">
-		We Heartly Congratulates First Three Positions on the Basis of CGPA</div>
-	<p class="auto-style24"><span class="auto-style16">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1st&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-M. Umair Awan&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.442</span>1st&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-M. Umair Awan&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.442</p>
-	<p class="auto-style14">&nbsp; 2nd&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; M. 
-	Naveed Anwar&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.248</p>
-	<p class="auto-style14">3rd&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; M. 
-	Kashif Javed&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.184</p>
+<div style="color: black;">
+	<div class="auto-style30">
+		<strong>We Heartly Congratulates First Three Positions on the Basis of CGPA</strong></div>
+	<p class="auto-style28"><strong>&nbsp;&nbsp; </strong>1st&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	M. Umair Awan&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	3.248</p>
+	<p class="auto-style28">&nbsp;&nbsp; 2nd&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;M. 
+	Naveed Anwar &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.248</p>
+	<p class="auto-style28">3rd&nbsp;&nbsp; &nbsp;&nbsp; M. 
+	Kashif Javed&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.184</p>
 </div>
 <p class="auto-style4">&nbsp;</p>
-<marquee style="background-color:  #269900; color:  #269900;">nothing is here</marquee>
 <p class="auto-style7">&nbsp;</p>
-<div style="background-color: black;">
 	<center>
-	<p class="auto-style16">you can browse uet lms directly from here, just click the 
-lms button </p>
-<p class="auto-style7"><a href="http://lms.uet.edu.pk">
-<span class="auto-style18">Lms</span></a></p>
-<p class="auto-style16">you can go to youtube directly from here, just click the 
-youtube button</p>
-<p class="auto-style7">
-<a href="http://www.youtube.com"><span class="auto-style18">Youtube</span></a></p>
-<p class="auto-style16">You can goto facebook Directly from here, just click the 
-facebook button</p>
-<p class="auto-style7">
-<a href="https://www.facebook.com"><span class="auto-style18">Facebook</span></a></p></center></div>
-<p class="auto-style7">&nbsp;</p>
-<marquee style="background-color:  #269900; color:  #269900;">nothing is here</marquee>
-<p class="auto-style7">&nbsp;</p>
-<div style="background-color: black;">
-<p class="auto-style14">we also provide online music facilities</p>
-<p class="auto-style10"><span class="auto-style18">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; visit now&nbsp;&nbsp;&nbsp; 
-</span> <a href="https://soundcloud.com/"><span class="auto-style18">soundcloud</span></a></p>
-<p class="auto-style10"><span class="auto-style18">visit now&nbsp;&nbsp;&nbsp; 
-</span> <a href="https://www.iheart.com/"><span class="auto-style18">iheart</span></a></p>
-<p class="auto-style10"><span class="auto-style18">visit now&nbsp;&nbsp;&nbsp; 
-</span> <a href="https://tunein.com/"><span class="auto-style18">tunein</span></a></p>
-<p class="auto-style10"><span class="auto-style18">&nbsp;&nbsp;&nbsp;visit now&nbsp;&nbsp;&nbsp; 
-</span> <a href="https://www.last.fm/"><span class="auto-style18">last.fm</span></a></p></div>
-<p class="auto-style7">&nbsp;</p>
-<marquee style="background-color:  #269900; color:  #269900;">nothing is here</marquee>
-<p class="auto-style7">&nbsp;</p>
-<div style="background-color: black;">
-<p class="auto-style10"><span class="auto-style18">you can also download latest android apps and games with 
-apk, so Click this android button</span></p></div>
-<p class="auto-style10">
+	<p class="auto-style27"><strong>You Can Browse UET LMS Directly from here, Just Jlick the 
+LMS Button </strong> </p>
+<p class="auto-style25"><a href="http://lms.uet.edu.pk">
+<span class="auto-style26">LMS</span></a></p>
+<p class="auto-style27"><strong>You Can Go To Youtube Directly from here, Just Click the 
+Youtube Button</strong></p>
+<p class="auto-style25">
+<a href="http://www.youtube.com"><span class="auto-style26">Youtube</span></a></p>
+<p class="auto-style27"><strong>You can Go To Facebook Directly from here,
+Just Click the 
+Facebook Button</strong></p>
+<p class="auto-style25">
+<a href="https://www.facebook.com"><span class="auto-style26">Facebook</span></a></p></center></div>
+<p class="auto-style25">&nbsp;</p>
+<p class="auto-style25">&nbsp;</p>
+<p class="auto-style14"><strong>We also provide Online Music Facilities</strong></p>
+<p class="auto-style28"><span class="auto-style26">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visit Now&nbsp;&nbsp;&nbsp; 
+</span> <a href="https://soundcloud.com/"><span class="auto-style26"><strong>soundcloud</strong></span></a></p>
+<p class="auto-style28"><span class="auto-style26">Visit Now<strong>&nbsp;&nbsp;&nbsp;
+</strong> 
+</span> <a href="https://www.iheart.com/"><span class="auto-style26"><strong>iheart</strong></span></a></p>
+<p class="auto-style28"><span class="auto-style26">Visit Now&nbsp;&nbsp;&nbsp; 
+</span> <a href="https://tunein.com/"><span class="auto-style26"><strong>tunein</strong></span></a></p>
+<p class="auto-style28"><span class="auto-style26"><strong>&nbsp;&nbsp;</strong>Visit Now<strong>&nbsp;&nbsp;&nbsp;
+</strong> 
+</span> <a href="https://www.last.fm/"><span class="auto-style26"><strong>last.fm</strong></span></a></p></div>
+<p class="auto-style25">&nbsp;</p>
+<p class="auto-style25">&nbsp;</p>
+<p class="auto-style14"><strong>you can also Download Latest Android Apps and Games with 
+APK, so Click this Android Button</strong></p></div>
+<p class="auto-style28">
 <a href="http://en.uptodown.com/android"><img alt="not found" height="38" src="android.png" width="41" /></p>
 	</a>
+	<span class="auto-style25">
 	<br />
 	<br />
-	<marquee style="background-color:  #269900; color:  #269900;">nothing is here</marquee>
 	<br />
 	<br> 
 	<br>
+	</span>
 	<center>
-	<div style="background-color: black;">
 	<span class="auto-style22"></span>
-	<span class="auto-style16">all batches combine time-table. zoom it and easily view it...</span><span class="auto-style22"><br /></div>
+	<span class="auto-style27"><strong>All Batches Combine Time-Table is Here. Drag Image into New Tab and Easily View it...</strong></span><span class="auto-style22"><strong><br /></div>
 	<br />
-	<img alt="not found" class="auto-style23" height="231" src="tt.png" width="407" /></span></div></center>
+	<img alt="not found" class="auto-style23" height="231" src="tt.png" width="407" /></strong></span><strong></div></strong></center>
 <p class="auto-style7">&nbsp;</p>
-<marquee style="background-color:  #269900; color:  #269900;">nothing is here</marquee>
 <p class="auto-style7">&nbsp;</p>
-<div style="background-color: black;">
+<div style="background-color: #00004d;">
 <p class="auto-style7">&nbsp;</p>
-<p class="auto-style10" style="color: white;">©<span class="auto-style25">Powe #269900 and Managed by Best 
+<p class="auto-style10" style="color: white;">©<span class="auto-style25">Powered and Managed by Best 
 Developers</span></p>
 <p class="auto-style10" style="color: white;">M. Kashif Javed &amp; M. Ahsan Raza</p>
 <p class="auto-style10" style="color: white;">Contact Us / Mail Us</p>
 <p class="auto-style10">&nbsp;</p>
-<p class="auto-style10" style="color: white;">&nbsp; M. Kashif Javed&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-M. Ahsan Raza&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+<p class="auto-style10" style="color: white;">&nbsp; M. Kashif Javed&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+M. Ahsan Raza&nbsp;</p>
 <p class="auto-style10" style="color: white;">mAIL ME AT: <span class="auto-style12"><a href="mailto:kashifj521@gmail.com">
 kashifj521@gmail.com</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
