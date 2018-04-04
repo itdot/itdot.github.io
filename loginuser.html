@@ -1,13 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" type="text/css" href="aliraza4.css">
+
+<!-- ------------------------------------------------------------------------------------------------------------------ -->
+
+<script language="JavaScript">
+
+    document.onkeypress = function (event) {
+        event = (event || window.event);
+        if (event.keyCode == 123) {
+           //alert('No F-12');
+            return false;
+        }
+    }
+    document.onmousedown = function (event) {
+        event = (event || window.event);
+        if (event.keyCode == 123) {
+            //alert('No F-keys');
+            return false;
+        }
+    }
+document.onkeydown = function (event) {
+        event = (event || window.event);
+        if (event.keyCode == 123) {
+            //alert('No F-keys');
+            return false;
+        }
+    }
+/////////////////////end///////////////////////
+</script>
+
+<!-- ------------------------------------------------------------------------------------------------------------------ -->
+
+<script>
+window.oncontextmenu=function(){
+console.log("Right Click Disabled");
+return false;
+}
+</script>
+
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 <title>Quick Data Provider(ITDOT) | About Us</title>
 <link rel="icon" href="favicon.ico" type="image/x-icon">
-<link rel="stylesheet" type="text/css" href="w4.css">
 	<title>Login User</title>
 </head>
-<body class="w3-black">
+<body class="aliraza4-black">
 <center>
 	<h1 style="margin-top: 215px;">User Login</h1><div style="margin-right: 65px;">
 	<h6 style="margin-left: 60px;">Enter your EMAIL and PASSWORD</h6>
